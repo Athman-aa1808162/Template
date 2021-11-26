@@ -197,7 +197,9 @@ header .container .hero .info a {
 }
 
 .section-1 .container {
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .section-1 .container span img {
@@ -248,4 +250,77 @@ header .container .hero .info a {
 .section-1 .container .right-col img {
     display: none;
 }
+
+@media (min-width: 650px) {
+.section-1 .container span img {
+    width: 70px;
+}
+.section-1 .container .left-col .text-1,
+.section-1 .container .left-col .text-2,
+.section-1 .container .left-col .text-3 {
+    width: 488px;
+    height: 135px;
+}
+}
+
+@media (min-width: 780px) {
+.section-1 .container span img {
+    width: 110px;
+}
+.section-1 .container .left-col .text-1,
+.section-1 .container .left-col .text-2,
+.section-1 .container .left-col .text-3 {
+    width: 588px;
+    height: 135px;
+}
+.section-1 .container .right-col img {
+    display: flex;
+} 
+}
 /* End Section One */
+
+/* Start Section Two */
+.section-2 {
+    background-color: azure;
+    height: 686px;
+    padding-top: 35px;
+    position: relative;
+}
+
+.section-2::before {
+    content: "";
+    width: 100%;
+    height: 307px;
+    background-color: rgba(46, 213, 115, 0.5);
+    position: absolute;
+    top: 0;
+}
+
+.section-2 .container {
+
+}
+
+.section-2 .container .top-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-2 .container .top-heading h4 {
+    font-size: 22px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #4F4F4F;
+    position: relative;
+}
+
+.section-2 .container .top-heading h4::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    left: -15px;
+    background-color: #4F4F4F;
+}
+
+/* End Section Two */
