@@ -29,6 +29,10 @@ img {
     display: block;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
 .container {
     padding-left: 8%;
     padding-right: 8%;
@@ -113,7 +117,7 @@ header .container .hero {
 
 header .container .hero img {
     display: none;  
-    max-width:58%;
+    max-width:55%;
     height: auto;
 }
 
@@ -282,45 +286,104 @@ header .container .hero .info a {
 /* Start Section Two */
 .section-2 {
     background-color: azure;
-    height: 686px;
-    padding-top: 35px;
+    padding-bottom: 80px;
     position: relative;
 }
 
-.section-2::before {
-    content: "";
-    width: 100%;
-    height: 307px;
-    background-color: rgba(46, 213, 115, 0.5);
-    position: absolute;
-    top: 0;
-}
-
-.section-2 .container {
-
-}
-
-.section-2 .container .top-heading {
+.section-2 .top-heading {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
+    min-height: 307px;
+    background-color: rgba(46, 213, 115, 0.5);
 }
 
-.section-2 .container .top-heading h4 {
-    font-size: 22px;
+.section-2 .top-heading .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-2 .top-heading .container h4 {
+    font-size: 18px;
+    font-weight: bold;
     line-height: 56px;
     letter-spacing: 0.2px;
     color: #4F4F4F;
     position: relative;
+    z-index: 99;
 }
 
-.section-2 .container .top-heading h4::before {
-    content: "";
+.section-2::after {    
+    content: url(../img/section-two-img.png);
     position: absolute;
-    width: 8px;
-    height: 100%;
-    left: -15px;
-    background-color: #4F4F4F;
+    left: -75px;
+    top: 0;
+    opacity: 0.8;
+}
+
+.section-2 .container .feautres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-2 .container .feautres .one {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    max-width: 440px;
+}
+
+.section-2 .container .feautres .one i {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.section-2 .container .feautres .one p{
+    font-size: 20px;
+    color: #282828;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+}
+
+.section-2 .container .feautres .one .bag-icon {color: #FFB4EA;}
+.section-2 .container .feautres .one .ticket-icon {color: rgba(46, 213, 115, 0.5)}
+.section-2 .container .feautres .one .more-icon {color: #FE799A;}
+.section-2 .container .feautres .one .store-icon {color: #8AD8FF;}
+.section-2 .container .feautres .one .discount-icon {color: #F080D0;}
+.section-2 .container .feautres .one .shopping-icon {color: #A8AFF4;}
+
+@media (min-width: 520px) {
+    .section-2 .top-heading .container h4 {
+        font-size: 22px;
+        max-width: 430px;
+    }
+}
+
+@media (min-width: 780px) {
+    .section-2 .top-heading .container {
+        flex-direction: row;
+        justify-content:space-between;
+        gap: 200px;
+    }
+
+    .section-2 .top-heading .container h4 {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-2 .container .feautres {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 300px);
+    }
 }
 
 /* End Section Two */
