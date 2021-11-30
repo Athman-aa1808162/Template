@@ -336,7 +336,31 @@ header .container .hero .info a {
     flex-direction: column;
     margin-top: 4rem;
     max-width: 440px;
+    position: relative;
 }
+
+.section-2 .container .feautres .one::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    left: -20px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: #FFB4EA;
+    transition: all 400ms ease;
+}
+
+.section-2 .container .feautres .one:hover::before {
+    width: 100%;
+    opacity: 0.4;
+    border-radius: 4px
+}
+
+.section-2 .container .feautres .one:nth-child(2):before {background-color: rgba(46, 213, 115, 0.5)}
+.section-2 .container .feautres .one:nth-child(3):before {background-color: #FE799A}
+.section-2 .container .feautres .one:nth-child(4):before {background-color: #ffaa8a}
+.section-2 .container .feautres .one:nth-child(5):before {background-color: #F080D0}
+.section-2 .container .feautres .one:nth-child(6):before {background-color: #A8AFF4}
 
 .section-2 .container .feautres .one i {
     font-size: 30px;
@@ -353,9 +377,9 @@ header .container .hero .info a {
 }
 
 .section-2 .container .feautres .one .bag-icon {color: #FFB4EA;}
-.section-2 .container .feautres .one .ticket-icon {color: rgba(46, 213, 115, 0.5)}
+.section-2 .container .feautres .one .ticket-icon {color: rgba(46, 213, 115, 0.5);}
 .section-2 .container .feautres .one .more-icon {color: #FE799A;}
-.section-2 .container .feautres .one .store-icon {color: #8AD8FF;}
+.section-2 .container .feautres .one .store-icon {color: #ffaa8a;}
 .section-2 .container .feautres .one .discount-icon {color: #F080D0;}
 .section-2 .container .feautres .one .shopping-icon {color: #A8AFF4;}
 
@@ -384,7 +408,7 @@ header .container .hero .info a {
 
 @media (min-width: 1200px) {
     .section-2 .top-heading .container {
-        gap: 500px;
+        gap: 750px;
     }
     .section-2 .top-heading .container h4 {
         font-size: 40px;
@@ -392,11 +416,12 @@ header .container .hero .info a {
     .section-2 .container .feautres {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 220px);
-        gap: .5rem;
+        grid-template-rows: repeat(2, 250px);
+        gap: .6rem;
     }
     .section-2 .container .feautres .one p {
         font-size: 16px;
+        max-width: 300px;
     }
     .section-2 .container .feautres .two {grid-column: 1 / 2}
     .section-2 .container .feautres .six {grid-column: 4 / 5;grid-row: 1 / 2;}
@@ -427,7 +452,7 @@ header .container .hero .info a {
 
 .section-3 .container .abs-img {
     position: absolute;
-    right: 0;
+    right: 40px;
     top: 0;
     width: 90px;
 }
@@ -443,9 +468,12 @@ header .container .hero .info a {
     flex-direction: column;
 }
 
+.section-3 .container .right-col h4 {font-size: 23px;}
+.section-3 .container .right-col h1 {font-size: 28px;}
+
 .section-3 .container .right-col h4,h1{
     color: #373F41;
-    max-width: 330px;
+    max-width: 400px;
     font-weight: bold;
     letter-spacing: 0.2px;
     line-height: 56px;
@@ -456,6 +484,7 @@ header .container .hero .info a {
     max-width: 330px;
     letter-spacing: 0.3px;
     line-height: 22px;
+    font-size: 18px;
 }
 
 @media (min-width: 780px) {
