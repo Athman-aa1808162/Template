@@ -547,7 +547,8 @@ header .container .hero .info a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 5px;
+    flex-direction: column;
 }
 
 .section-4 .container .left-col .input input {
@@ -586,6 +587,7 @@ header .container .hero .info a {
     letter-spacing: 0.3px;
     color: #ffff;
     border-radius: 10px;
+    width: 300px;
 }
 
 .section-4 .container .right-col {
@@ -598,6 +600,13 @@ header .container .hero .info a {
 }
 
 @media (min-width: 580px) {
+    .section-4 .container .left-col .input {
+        flex-direction: row;
+        gap: 25px;
+    }
+    .section-4 .container .left-col .input a {
+        width: auto;
+    }
     .section-4 .container .right-col {
         display: flex;
     } 
@@ -696,9 +705,69 @@ header .container .hero .info a {
     background-color: #FFA3AB;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 950px) {
     .section-5 .container .cards-container {
         justify-content: unset;
     }
 }
 /* End Section Five */
+
+/* Start Footer */
+footer {
+    background-color: rgba(46, 213, 115, 0.5);
+    padding-top: 43px;
+}
+
+footer .container .first-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer .container .first-row .about {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+footer .container .first-row .about img {
+    width: 83px;
+}
+
+footer .container .first-row .about p {
+    max-width: 445px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #454646;
+    letter-spacing: 0.3px;
+}
+
+footer .container .first-row .lists {
+    display: none;
+    gap: 100px;
+}
+
+footer .container .first-row .lists h3 {
+    color: #000000;
+    opacity: 0.5;
+    letter-spacing: -0.01em;
+    font-size: 18px;
+    line-height: 135%;
+}
+
+footer .container .first-row .lists .list ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 6px;
+}
+
+footer .container .first-row .lists .list ul li a {
+    text-decoration: none;
+    color: #555555;
+    letter-spacing: -0.01em;
+    line-height: 135%;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* End Footer */
