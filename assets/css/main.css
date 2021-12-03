@@ -239,6 +239,7 @@ header .container .hero .info a:hover {
     padding-top: 130px;
     padding-bottom: 160px;
     position: relative;
+    overflow: hidden;
 }
 
 .section-1 .container {
