@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: rgba(228, 152, 11, 0.719);
+    background: var(--pink-color);
 }
 
 body::-webkit-scrollbar-track {
@@ -701,6 +701,7 @@ header .container .hero .info a:hover {
 .section-5 {
     padding-top: 65px;
     padding-bottom: 110px;
+    overflow: hidden;
 }
 
 .section-5 .container {

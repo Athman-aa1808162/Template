@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <!-- Tabler Icons -->
     <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Title -->
     <title>Template</title>
 </head>
@@ -36,8 +38,8 @@
                 </div>
             </nav>
             <div class="hero">
-                <img src="./assets/img/Header-img.png" alt="">
-                <div class="info">
+                <img src="./assets/img/Header-img.png" alt="Img" data-aos="fade-right">
+                <div class="info" data-aos="fade-left">
                     <h1>We scratch, build and play together</h1>
                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
                     <a href="">Contact us</a>
@@ -50,12 +52,12 @@
     <section class="section-1">
         <div class="container">
             <span><img src="./assets/img/section-one-img-2.png" alt=""></span>
-            <div class="left-col">
+            <div class="left-col" data-aos="fade-right">
                 <div class="text-1 active"><p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p></div>
                 <div class="text-2"><p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p></div>
                 <div class="text-3"><p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p></div>
             </div>
-            <div class="right-col">
+            <div class="right-col" data-aos="fade-left">
                 <img src="./assets/img/section-one-img.png" alt="">
             </div>
         </div>
@@ -64,13 +66,13 @@
     <!-- Start Section Two -->
     <section class="section-2">
         <span class="top-heading">
-           <div class="container">
+           <div class="container" >
             <h4>Simplify your online shipping for free this month!</h4>
             <h4>Grow your business with better Shipping organizations</h4>
            </div>
         </span>
         <div class="container">
-            <div class="feautres">
+            <div class="feautres" data-aos="fade-down">
                 <div class="one one">
                     <i class="ti ti-briefcase bag-icon"></i>
                     <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum.</p>
@@ -105,9 +107,9 @@
         <div class="container">
             <img class="abs-img" src="./assets/img/section-3-img.png" alt="">
             <div class="left-col">
-                <img src="./assets/img/section-3-main-img.png" alt="">
+                <img src="./assets/img/section-3-main-img.png" alt="img" data-aos="zoom-out-right">
             </div>
-            <div class="right-col">
+            <div class="right-col" data-aos="zoom-in-right">
                 <h4>We scratch, build and play together</h4>
                 <h1>We scratch, build and play together</h1>
                 <p>Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.</p>
@@ -119,14 +121,14 @@
     <!-- Start Section Four -->
     <section class="section-4">
         <div class="container">
-            <div class="left-col">
+            <div class="left-col" data-aos="zoom-in-right">
                 <h2>Grow your business with better Shipping organizations</h2>
                 <div class="input">
                     <input type="text" placeholder="Write your mail address">
                     <a href="#">Subscribe</a>
                 </div>
             </div>
-            <div class="right-col">
+            <div class="right-col" data-aos="zoom-in-left">
                 <img src="./assets/img/section-4-main-img.png" alt="">
             </div>
         </div>
@@ -136,7 +138,7 @@
     <section class="section-5">
         <div class="container">
             <h1>The best design for your studio website</h1>
-            <div class="cards-container">
+            <div class="cards-container" data-aos="flip-down">
                 <div class="card">
                     <div class="info">
                         <h1>Audit</h1>
@@ -226,6 +228,12 @@
         </div>
     </footer>
     <!-- End Footer -->
+    <!-- JS file -->
     <script src="./assets/js/main.js"></script>
+    <!-- AOS library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
