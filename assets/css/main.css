@@ -14,6 +14,28 @@
     margin: 0;
 }
 
+::selection {
+    background: var(--pink-color);
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--pink-color);
+    color: white;  
+}
+
+body::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(228, 152, 11, 0.719);
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
 body {
     font-family: 'JetBrains Mono', monospace;
     background-color: #E5E5E5;
@@ -67,6 +89,7 @@ header .container nav .nav-menu.show {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 2rem;
 }
 
 header .container nav ul li a {
@@ -76,10 +99,14 @@ header .container nav ul li a {
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0.2px;
+    transition: all 150ms ease;
+}
+
+header .container nav ul li a:hover {
+    color: var(--pink-color);
 }
 
 header .container nav ul li {
-    /* background-color: rebeccapurple; */
     padding: 1rem;
     width: 100%;
     text-align: center;
@@ -99,6 +126,11 @@ header .container nav .nav-btn a {
     line-height: 18px;
     color: #3C64B1;
     font-weight: bold;
+    transition: all 150ms ease;
+}
+
+header .container nav .nav-btn a:first-child:hover{
+    color: var(--pink-color);
 }
 
 header .container nav .nav-btn a:last-child {
@@ -107,6 +139,10 @@ header .container nav .nav-btn a:last-child {
     min-width: 90px;
     min-height: 42px;
     border-radius: 6px;
+}
+
+header .container nav .nav-btn a:last-child:hover {
+    background-color: #3c64b1;
 }
 
 header .container .hero {
@@ -158,6 +194,12 @@ header .container .hero .info a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 200ms ease;
+}
+
+header .container .hero .info a:hover {
+    background-color: var(--pink-color);
+    color: white;
 }
 
 @media (min-width: 780px) {
@@ -224,7 +266,6 @@ header .container .hero .info a {
 .section-1 .container .left-col .text-1,
 .section-1 .container .left-col .text-2,
 .section-1 .container .left-col .text-3 {
-
     background-color: #fff;
     box-shadow: 0px 12px 35px 4px rgba(171, 8, 96, 0.05);
     border-radius: 15px;
@@ -278,7 +319,8 @@ header .container .hero .info a {
     }
     .section-1 .container .right-col img {
         display: flex;
-        animation: img ease-in 3s infinite alternate;
+        animation: img linear 2s infinite alternate;
+        margin-bottom: 5rem;
     } 
     @keyframes img {
         50% {transform: translateY(-30px);}
@@ -611,6 +653,11 @@ header .container .hero .info a {
     color: #ffff;
     border-radius: 10px;
     width: 300px;
+    transition: all 200ms ease;
+}
+
+.section-4 .container .left-col .input a:hover {
+    background-color: #8549d6;
 }
 
 .section-4 .container .right-col {
@@ -724,14 +771,27 @@ header .container .hero .info a {
     letter-spacing: -0.01em;
     color: #000000;
     font-weight: bold;
+    transition: all 300ms ease;
+}
+
+.section-5 .container .cards-container .card:hover span {
+    background-color: rgb(255 200 100);
 }
 
 .section-5 .container .cards-container .card:nth-child(2) span{
     background-color: rgba(46, 213, 115, 0.5);
 }
 
+.section-5 .container .cards-container .card:hover:nth-child(2) span {
+    background-color: rgb(46 213 115 / 80%);
+}
+
 .section-5 .container .cards-container .card:last-child span{
     background-color: #FFA3AB;
+}
+
+.section-5 .container .cards-container .card:hover:last-child span {
+    background-color: #ff808a;
 }
 
 @media (min-width: 950px) {
@@ -803,7 +863,7 @@ footer .container .second-row .line {
 
 footer .container .second-row ul {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     font-weight: 700;
     flex-wrap: wrap;
 } 
@@ -825,6 +885,11 @@ footer .container .third-row {
 
 footer .container .third-row img {
     cursor: pointer;
+    transition: all 200ms ease;
+}
+
+footer .container .third-row img:not(:last-child):hover {
+    transform: translateY(-5px);
 }
 
 footer .container .third-row img:not(:last-child) {
@@ -889,7 +954,7 @@ footer .container .fourth-row img {
     }
     footer .container .first-row .lists h3 {
         color: #000000;
-        opacity: 0.5;
+        opacity: 0.7;
         letter-spacing: -0.01em;
         font-size: 18px;
         line-height: 135%;
@@ -907,6 +972,10 @@ footer .container .fourth-row img {
         line-height: 135%;
         font-size: 16px;
         font-weight: 600;
+        transition: all 100ms ease;
+    }
+    footer .container .first-row .lists .list ul li a:hover {
+        color: black;
     }
     footer .container .third-row .bottom-img {
         width: unset;
