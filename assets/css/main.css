@@ -254,6 +254,7 @@ header .container .hero .info a:hover {
     left: 0;
     top: 0;
     opacity: 0.8;
+    pointer-events: none;
 }
 
 .section-1 .container .left-col {
@@ -370,6 +371,7 @@ header .container .hero .info a:hover {
     left: -75px;
     top: 0;
     opacity: 0.8;
+    pointer-events: none;
 }
 
 .section-2 .container .feautres {
@@ -515,6 +517,7 @@ header .container .hero .info a:hover {
     top: 0;
     width: 90px;
     opacity: 0.8;
+    pointer-events: none;
 }
 
 .section-3 .container .left-col img{
@@ -847,6 +850,7 @@ footer .container .top-img {
 
 footer .container .top-img img {
     width: 65%;
+    pointer-events: none;
 }
 
 footer .container .second-row {
@@ -903,6 +907,7 @@ footer .container .third-row .bottom-img {
     left: 0;
     width: 100px;
     opacity: 0.8;
+    pointer-events: none;
 }
 
 footer .container .fourth-row {
@@ -937,6 +942,7 @@ footer .container .fourth-row img {
     right: 0;
     margin-bottom: 75px;
     opacity: 0.8;
+    pointer-events: none;
 }
 
 @media (min-width: 1100px) {
